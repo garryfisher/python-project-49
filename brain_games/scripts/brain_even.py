@@ -1,40 +1,48 @@
-from brain_games.cli import welcome_user
-from random import randint
+import random
 import prompt
 
-welcome_user()
 
-
-"""
-1. Сделать выдачу рандомного числа.
-2. Написал цикл предлагающий вопрос с рандомным числом 3 раза.
-3. Если ответ 3 раза, то завершить с поздравлением.
-4. Если нет ответа, то завершить с ошибкой.
-"""
-
-
-from random import randint
-import prompt
+def welcome_user():
+    name = prompt.string('May I have your name? ')
+    res = f'Hello {name}!'
+    print(res)
+    return res
 
 def random_number_for_questions():
-    question_number = randint(1, 100)
+    question_number = random.randint(1, 101)
     return question_number
 
-  
-fix_random_number = random_number_for_questions()
+
+def even_not_even(number):
+    if number % 2 == 0:
+      return 'yes'
+    elif number %2 == 1:
+      return 'no'
 
 
-
-def user_answer():
-    answer = prompt.string('Your answer: ')
-    if fix_random_number % 2 == 0 and answer == 'yes':
-      return 'Correct!'
-    elif fix_random_number % 2 == 1 and answer == 'no':
-      return 'Correct!'
-    else:
-      return
+def is_answer_wrong(item):
+    if item == 'yes':
+      print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\n Let's try again, dude!")
+    elif item == 'no':
+      print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\n Let's try again, dude!")  
 
 
+welcome_user()
 print('Answer "yes" if the number is even, otherwise answer "no".')
-print(f'Question: {fix_random_number}')
-user_answer()
+tries = 3
+while tries > 0:
+  fixing_number_for_question = random_number_for_questions()
+  print(f'Questions: {fixing_number_for_question}')
+  user_answer = input("Your answer: ")
+  if user_answer == 'yes' or user_answer == 'no':
+    if user_answer == even_not_even(fixing_number_for_question):
+      print ('Correct!')
+      tries -= 1
+      
+    elif user_answer != even_not_even(fixing_number_for_question):
+      is_answer_wrong(user_answer)
+      break
+  else:
+    break
+if tries == 0:
+  print('Congratulations, dude!')
