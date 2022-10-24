@@ -25,7 +25,7 @@ def is_answer_wrong(item):
 
 
 def main():
-    print('')
+    return
 
 
 if __name__ == '__main__':
