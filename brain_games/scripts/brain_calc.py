@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 from brain_games.cli import welcome_user
 import random
-    
-
-def main():
-    pass
 
 
 def random_number():
@@ -29,7 +25,7 @@ def calculate(n1, n2, s):
         answer = n1 - n2
     elif s == "*":
         answer = n1 * n2
-    return answer    
+    return answer
 
 
 def compare_answer_calc():
@@ -38,20 +34,19 @@ def compare_answer_calc():
     elif not user_answer == str(correct_answer):
         print(f"""'{user_answer}' is wrong answer ;(.
 Correct answer was '{correct_answer}'""")
-        
 
 
-
-
+def main():
+    return
 
 
 if __name__ == '__main__':
     main()
 
 
-
-
-
+print('brain-calc\n\nWelcome to the Brain Games!')
+name = welcome_user()
+print(f'Hello, {name}')
 tries = 3
 while tries > 0:
     num_1 = random_number()
@@ -64,12 +59,9 @@ while tries > 0:
         print('Correct!')
         tries -= 1
     elif not user_answer == str(correct_answer):
-        print(f"""'{user_answer}' is wrong answer ;(.
-Correct answer was '{correct_answer}'""")
+        print(f"'{user_answer}' is wrong answer ;(.Correct answer was '{correct_answer}'")
+        print(f"Let's try again, {name}!")
         break
-print('Super, dude')
-
-
-
-
+if tries == 0:
+    print(f'Congratulations, {name}!')     
 
