@@ -3,7 +3,7 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "First hexlet project"
 classifiers = [
-	"Topic :: Games/Entertainment :: Puzzle Games
+	"Topic :: Games/Entertainment :: Puzzle Games"
 ]
 authors = ["Gennady Vinogradov <gwinogradow@gmail.com>"]
 repository = "https://github.com/garryfisher/python-project-49"
