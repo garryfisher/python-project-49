@@ -1,10 +1,9 @@
 import prompt
 
 
-def welcome_user(rule=''):
+def welcome_user(rule=""):
     print('Welcome to the Brain Games!')
-    if rule:
-    	print(f'{rule}')
+    print(f'{rule}')
     get_user_name = prompt.string('May I have your name? ')
     print(f'Hello, {get_user_name}!')
     return get_user_name
