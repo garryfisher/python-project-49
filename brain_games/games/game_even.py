@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import random
 
-RULE = "Answer 'yes' if the number is even, otherwise answer 'no'."
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game():
