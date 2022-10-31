@@ -7,7 +7,6 @@ START_CUT, END_CUT = 5, 11
 SYMBOL = '..'
 
 
-
 def random_string(n1, n2=101):
     """Функция формирует строку нужной длины"""
     step = random.randint(START_STEP, END_STEP)
