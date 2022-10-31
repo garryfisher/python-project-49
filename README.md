@@ -35,6 +35,7 @@
 
 <b>Game: "Arithmetic progression"</b><br>
 <i>brain-progression</i>
+
 <a href="https://asciinema.org/a/OIohdjM1sVPdLlQQ10S4CxLsO" target="_blank"><img src="https://asciinema.org/a/OIohdjM1sVPdLlQQ10S4CxLsO.svg" /></a>
 
 <b>Game: "Is it a prime number?"</b><br>
