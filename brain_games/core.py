@@ -11,9 +11,8 @@ def game_start(game_name):
             print('Correct!')
             tries -= 1
         elif not user_answer == correct_answer:
-            part_1 = f"'{user_answer}' is wrong answer ;(."
-            part_2 = f"Correct answer was '{correct_answer}'"
-            print(part_1, part_2)
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'")
             print(f"Let's try again, {name}!")
             break
     if tries == 0:
