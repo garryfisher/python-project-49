@@ -10,5 +10,8 @@ def calculation_game():
     for i in range(2, num_1 // 2 + 1):
         if (num_1 % i) == 0:
             index += 1
-        correct_answer = 'yes' if index <= 0 else 'no'
+        if index <= 0:
+            correct_answer = 'yes'
+        else:
+            correct_answer = 'no'
     return question_generator, correct_answer
