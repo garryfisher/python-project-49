@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
 import random
 import math
 
 RULE = 'Find the greatest common divisor of given numbers.'
 
 
-def game():
+def calculation_game():
     num_1 = random.randint(1, 101)
     num_2 = random.randint(1, 101)
     correct_answer = math.gcd(num_1, num_2)

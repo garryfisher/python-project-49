@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 
 RULE = 'What number is missing in the progression?'
@@ -7,12 +6,12 @@ START_CUT, END_CUT = 5, 11
 SYMBOL = '..'
 
 
-def random_string(n1, n2=101):
+def generate_string(number_1, number_2=101):
     """Функция формирует строку нужной длины"""
     step = random.randint(START_STEP, END_STEP)
     cut = random.randint(START_CUT, END_CUT)
-    start = min(n1, n2)
-    stop = max(n1, n2)
+    start = min(number_1, number_2)
+    stop = max(number_1, number_2)
     return list(range(start, stop, step)[:cut])
 
 
@@ -30,9 +29,9 @@ def mask_symbol(string):
     return [result, get_mask_symbol]
 
 
-def game():
+def calculation_game():
     num_1 = random.randint(1, 50)
-    string_generation = mask_symbol(random_string(num_1))
+    string_generation = mask_symbol(generate_string(num_1))
     question_generation = string_generation[0]
     correct_answer = string_generation[1]
     return question_generation, str(correct_answer)
