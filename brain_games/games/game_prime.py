@@ -3,15 +3,17 @@ import random
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def calculation_game():
-    num_1 = random.randint(1, 101)
-    question_generator = str(num_1)
-    index = 0
-    for i in range(2, num_1 // 2 + 1):
-        if (num_1 % i) == 0:
-            index += 1
-        if index <= 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
+def is_prime(number):
+    d = 2
+    while number % d != 0:
+        d += 1
+    if d == number:
+        return 'yes'
+    return 'no'
+
+
+def get_game():
+    number = random.randint(1, 101)
+    question_generator = str(number)
+    correct_answer = is_prime(number)
     return question_generator, correct_answer

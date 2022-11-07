@@ -29,9 +29,13 @@ def mask_symbol(string):
     return [result, get_mask_symbol]
 
 
-def calculation_game():
+def is_progression(number1):
+    string_generation = generate_string(number1)
+    string_masking = mask_symbol(string_generation)
+    return string_masking[0], string_masking[1]
+
+
+def get_game():
     num_1 = random.randint(1, 50)
-    string_generation = mask_symbol(generate_string(num_1))
-    question_generation = string_generation[0]
-    correct_answer = string_generation[1]
+    question_generation, correct_answer = is_progression(num_1)
     return question_generation, str(correct_answer)
