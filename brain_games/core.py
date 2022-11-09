@@ -1,7 +1,7 @@
 import prompt
 
 
-MAX_TRIES_IN_GAME = 3
+MAX_TRIES = 3
 
 
 def welcome_user(rule=""):
@@ -19,7 +19,7 @@ def get_user_answer(question):
 
 
 def run_game(game_name):
-    number_of_tries = MAX_TRIES_IN_GAME
+    number_of_tries = MAX_TRIES
     name = welcome_user(game_name.RULE)
     while number_of_tries > 0:
         question, correct_answer = game_name.get_game()
@@ -31,4 +31,6 @@ def run_game(game_name):
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'")
             print(f"Let's try again, {name}!")
+            break
+    if number_of_tries == 0:
         print(f"Congratulations, {name}!")
