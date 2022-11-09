@@ -11,7 +11,7 @@ def is_prime(number):
 
 
 def get_game():
-    number = random.randint(1, 101)
+    number = random.randint(1, 100)
     question_generator = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return question_generator, correct_answer
