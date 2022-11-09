@@ -7,9 +7,3 @@ def welcome_user(rule=""):
     print(f'Hello, {get_user_name}!')
     print(f'{rule}')
     return get_user_name
-
-
-def get_user_answer(question):
-    print(f"Question: {question}")
-    get_user_answer = input('Your answer: ')
-    return get_user_answer
