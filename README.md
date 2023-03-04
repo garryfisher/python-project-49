@@ -7,12 +7,12 @@
 
 This is the first tutorial project from the python developer course of the online hexlet school (https://ru.hexlet.io/programs/python/projects/49).
 
-Brain games is a set of console games:
-Brain-calc. Arithmetic expressions to be calculated.
-Brain-progression. Finding missing numbers in a sequence of numbers.
-Brain-even. Detecting an even number.
-Brain-gcd. Determining the largest common divisor.
-Brain-prime. Determining a prime number.
+Brain games is a set of console games:   
+Brain-calc. Arithmetic expressions to be calculated.   
+Brain-progression. Finding missing numbers in a sequence of numbers.   
+Brain-even. Detecting an even number.   
+Brain-gcd. Determining the largest common divisor.   
+Brain-prime. Determining a prime number.   
 
 ### Install.
 
