@@ -1,45 +1,61 @@
+## Brain games
+
 [![Actions Status](https://github.com/garryfisher/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/garryfisher/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d11f07f84f08016e3ab7/maintainability)](https://codeclimate.com/github/garryfisher/python-project-49/maintainability)
 
-<h3>Install.</h3>
+### Description
 
-1. <b>Clone from github:</b><br>
-<i>git clone https://github.com/garryfisher/python-project-49.git</i>
+This is the first tutorial project from the python developer course of the online hexlet school (https://ru.hexlet.io/programs/python/projects/49).
+
+Brain games is a set of console games:
+Brain-calc. Arithmetic expressions to be calculated.
+Brain-progression. Finding missing numbers in a sequence of numbers.
+Brain-even. Detecting an even number.
+Brain-gcd. Determining the largest common divisor.
+Brain-prime. Determining a prime number.
+
+### Install.
+
+  *1. Clone from github:*
+  
+  `git clone https://github.com/garryfisher/python-project-49.git`
 
 <a href="https://asciinema.org/a/Wy3lPogvQaqMOB1rsZaQHVEMQ" target="_blank"><img src="https://asciinema.org/a/Wy3lPogvQaqMOB1rsZaQHVEMQ.svg" /></a>
 
-2. <b>Go to the directory "python-project-49" and execute the commands:</b><br>
-<i>cd python-project-49</i><br>
-<i>make install</i><br>
-<i>make build</i><br>
-<i>make packet-install</i>
+  *2. Go to the directory "python-project-49" and execute the commands:*
+    
+`cd python-project-49`   
+`make install`   
+`make build`   
+`make packet-install`  
 
 <a href="https://asciinema.org/a/jSp9WgD8qiBAtCrak9tarwLPW" target="_blank"><img src="https://asciinema.org/a/jSp9WgD8qiBAtCrak9tarwLPW.svg" /></a>
 
-<h3>Game description. To start the corresponding game, execute the commands:</h3>
+### Running games
 
-<b>Game: "Checking a number for even"</b><br>
-<i>brain-even</i>
+
+*Game: "Checking a number for even"*   
+To start it, run the command `brain-even`
 
 <a href="https://asciinema.org/a/8RnjhldmRYb1lSGyotfp3IGuj" target="_blank"><img src="https://asciinema.org/a/8RnjhldmRYb1lSGyotfp3IGuj.svg" /></a>
 
-<b>Game: "Calculator"</b><br>
-<i>brain-calc</i>
+*Game: "Calculator"*   
+To start it, run the command `brain-calc`
 
 <a href="https://asciinema.org/a/1ZW16LWoLUqiF0AaGM2Na73Xk" target="_blank"><img src="https://asciinema.org/a/1ZW16LWoLUqiF0AaGM2Na73Xk.svg" /></a>
 
-<b>Game: "Find the greatest common divisor"</b><br>
-<i>brain-gcd</i>
+*Game: "Find the greatest common divisor"*   
+To start it, run the command `brain-gcd`
 
 <a href="https://asciinema.org/a/b4UBJARlC3Rb2bKq8nwbZT1rY" target="_blank"><img src="https://asciinema.org/a/b4UBJARlC3Rb2bKq8nwbZT1rY.svg" /></a>
 
-<b>Game: "Arithmetic progression"</b><br>
-<i>brain-progression</i>
+*Game: "Arithmetic progression"*   
+To start it, run the command `brain-progression`
 
 <a href="https://asciinema.org/a/OIohdjM1sVPdLlQQ10S4CxLsO" target="_blank"><img src="https://asciinema.org/a/OIohdjM1sVPdLlQQ10S4CxLsO.svg" /></a>
 
-<b>Game: "Is it a prime number?"</b><br>
-<i>brain-prime</i>
+*Game: "Is it a prime number?"*   
+To start it, run the command `brain-prime`
 
 <a href="https://asciinema.org/a/Pr1CXq6iEuNt2NcFRsT8BbG72" target="_blank"><img src="https://asciinema.org/a/Pr1CXq6iEuNt2NcFRsT8BbG72.svg" /></a>
 
